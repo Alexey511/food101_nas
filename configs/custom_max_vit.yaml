@@ -1,0 +1,32 @@
+_base_: base.yaml
+
+model:
+  model_type: custom
+  custom_model_type: vit
+  num_classes: 101
+  image_size: 224
+  
+  # Максимальные параметры из nas_vit.yaml для теста VRAM
+  heads: 12
+  dim: 504  # 512 округлено вниз до ближайшего, кратного 12
+  depth: 10
+  mlp_ratio: 3.0
+  patch_size: 14 # Меньший патч = больше токенов = больше памяти
+  dropout: 0.1
+
+train:
+  lr: 1e-4
+  epochs: 20
+  batch_size: 64
+  optimizer: adamw
+  weight_decay: 0.01
+  scheduler:
+    name: cosine
+  save_dir: ./checkpoints
+  save_best: true
+
+hardware:
+  num_workers: 8
+  pin_memory: false
+  grad_accum_steps: 4
+  device: cuda

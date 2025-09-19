@@ -1,0 +1,24 @@
+_base_: base.yaml
+
+model:
+  model_type: timm
+  timm_model_name: vit_base_patch16_224
+  pretrained: true
+  num_classes: 101
+
+train:
+  lr: 1e-4
+  epochs: 11
+  batch_size: 64
+  optimizer: adamw
+  weight_decay: 0.01
+  scheduler:
+    name: cosine
+  save_dir: ./checkpoints
+  save_best: true
+
+hardware:
+  num_workers: 8
+  pin_memory: false
+  grad_accum_steps: 1
+  device: cuda

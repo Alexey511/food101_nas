@@ -1,0 +1,30 @@
+_base_: base.yaml
+
+model:
+  model_type: custom
+  custom_model_type: vit
+  image_size: 224
+  patch_size: 16
+  num_classes: 101
+  dim: 384
+  depth: 8
+  heads: 8
+  mlp_ratio: 2.0
+  dropout: 0.1
+
+train:
+  lr: 1e-3
+  epochs: 20
+  batch_size: 224
+  optimizer: adamw
+  weight_decay: 0.01
+  scheduler:
+    name: cosine
+  save_dir: ./checkpoints
+  save_best: true
+
+hardware:
+  num_workers: 8
+  pin_memory: false
+  grad_accum_steps: 1
+  device: cuda

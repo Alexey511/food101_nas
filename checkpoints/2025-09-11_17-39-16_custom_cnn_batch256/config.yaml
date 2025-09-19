@@ -1,0 +1,99 @@
+dataset:
+  name: food101
+  source: huggingface
+  num_classes: 101
+train:
+  epochs: 10
+  batch_size: 256
+  shuffle: true
+  lr: 0.001
+  weight_decay: 0.0001
+  t_max: 10
+  label_smoothing: 0.05
+  gradient_clip: 1.0
+  save_best: true
+  seed: 42
+  manual_seed_enabled: true
+  cutmix: true
+  optimizer: adamw
+  scheduler:
+    name: cosine
+  save_dir: ./checkpoints
+val:
+  batch_size: 64
+  shuffle: false
+transforms:
+  common:
+    resize: 224
+    mean:
+    - 0.5450310707092285
+    - 0.4435403347015381
+    - 0.3436422348022461
+    std:
+    - 0.2694936692714691
+    - 0.27188628911972046
+    - 0.2766088843345642
+  train:
+    horizontal_flip_p: 0.5
+    random_rotation_deg: 15
+    random_crop_scale:
+    - 0.8
+    - 1.0
+    color_jitter:
+      brightness: 0.2
+      contrast: 0.2
+      saturation: 0.2
+    gaussian_noise:
+      mean: 0.0
+      std: 0.01
+    cutmix:
+      alpha: 1.0
+      prob: 0.5
+  val: null
+hardware:
+  num_workers: 8
+  pin_memory: false
+  grad_accum_steps: 1
+  device: cuda
+_base_: base.yaml
+model:
+  model_type: custom
+  custom_model_type: cnn
+  in_channels: 3
+  num_classes: 101
+  stem_channels: 64
+  stem_conv_kernel_size: 7
+  stem_conv_stride: 2
+  stem_conv_padding: 3
+  stem_pool_kernel_size: 3
+  stem_pool_stride: 2
+  stem_pool_padding: 1
+  block_channels:
+  - 64
+  - 128
+  - 256
+  - 512
+  block_strides:
+  - 1
+  - 2
+  - 2
+  - 2
+  convs_per_block:
+  - 2
+  - 3
+  - 3
+  - 2
+  use_skip_per_block:
+  - true
+  - true
+  - true
+  - true
+  hidden_dims:
+  - 1024
+  - 512
+  dropout: 0.3
+  dropout_rates_per_block:
+  - 0.1
+  - 0.1
+  - 0.2
+  - 0.2

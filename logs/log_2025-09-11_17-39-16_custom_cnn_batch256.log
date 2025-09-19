@@ -1,0 +1,66 @@
+2025-09-11 17:39:16,139 - __main__ - INFO - Starting training experiment with config saved at: checkpoints\2025-09-11_17-39-16_custom_cnn_batch256\config.yaml
+2025-09-11 17:39:24,019 - src.data - INFO - Data loaders created with batch_size=256, num_workers=8
+2025-09-11 17:39:24,129 - src.trainer - INFO - Starting training for custom_cnn with 10 epochs, lr=0.001, batch_size=256
+2025-09-11 17:39:24,129 - src.trainer - INFO - Model type: custom, Custom model: True
+2025-09-11 17:41:25,093 - src.trainer - INFO - Saved train labels (CutMix) at checkpoints\2025-09-11_17-39-16_custom_cnn_batch256\labels\epoch_1_train_cutmix.npy
+2025-09-11 17:42:18,992 - src.trainer - INFO - Evaluation: Avg Loss: 4.1934, Accuracy: 0.0636
+2025-09-11 17:42:18,995 - src.trainer - INFO - Saved validation labels and predictions at checkpoints\2025-09-11_17-39-16_custom_cnn_batch256\labels\epoch_1_val.npy
+2025-09-11 17:42:18,995 - src.trainer - INFO - Epoch 1/10: Train Loss: 4.4459, Train Acc: 0.0358, Val Loss: 4.1934, Val Acc: 0.0636
+2025-09-11 17:42:19,091 - src.trainer - INFO - Saved best model with Val Acc: 0.0636 at checkpoints\2025-09-11_17-39-16_custom_cnn_batch256\best_custom_cnn.pth
+2025-09-11 17:44:19,647 - src.trainer - INFO - Saved train labels (CutMix) at checkpoints\2025-09-11_17-39-16_custom_cnn_batch256\labels\epoch_2_train_cutmix.npy
+2025-09-11 17:45:14,989 - src.trainer - INFO - Evaluation: Avg Loss: 3.9663, Accuracy: 0.0990
+2025-09-11 17:45:14,991 - src.trainer - INFO - Saved validation labels and predictions at checkpoints\2025-09-11_17-39-16_custom_cnn_batch256\labels\epoch_2_val.npy
+2025-09-11 17:45:14,991 - src.trainer - INFO - Epoch 2/10: Train Loss: 4.2657, Train Acc: 0.0611, Val Loss: 3.9663, Val Acc: 0.0990
+2025-09-11 17:45:15,253 - src.trainer - INFO - Saved best model with Val Acc: 0.0990 at checkpoints\2025-09-11_17-39-16_custom_cnn_batch256\best_custom_cnn.pth
+2025-09-11 17:47:18,762 - src.trainer - INFO - Saved train labels (CutMix) at checkpoints\2025-09-11_17-39-16_custom_cnn_batch256\labels\epoch_3_train_cutmix.npy
+2025-09-11 17:48:12,380 - src.trainer - INFO - Evaluation: Avg Loss: 3.7557, Accuracy: 0.1450
+2025-09-11 17:48:12,382 - src.trainer - INFO - Saved validation labels and predictions at checkpoints\2025-09-11_17-39-16_custom_cnn_batch256\labels\epoch_3_val.npy
+2025-09-11 17:48:12,382 - src.trainer - INFO - Epoch 3/10: Train Loss: 4.1390, Train Acc: 0.0819, Val Loss: 3.7557, Val Acc: 0.1450
+2025-09-11 17:48:12,411 - src.trainer - INFO - Saved best model with Val Acc: 0.1450 at checkpoints\2025-09-11_17-39-16_custom_cnn_batch256\best_custom_cnn.pth
+2025-09-11 17:50:13,313 - src.trainer - INFO - Saved train labels (CutMix) at checkpoints\2025-09-11_17-39-16_custom_cnn_batch256\labels\epoch_4_train_cutmix.npy
+2025-09-11 17:51:06,427 - src.trainer - INFO - Evaluation: Avg Loss: 3.6490, Accuracy: 0.1629
+2025-09-11 17:51:06,428 - src.trainer - INFO - Saved validation labels and predictions at checkpoints\2025-09-11_17-39-16_custom_cnn_batch256\labels\epoch_4_val.npy
+2025-09-11 17:51:06,429 - src.trainer - INFO - Epoch 4/10: Train Loss: 4.0293, Train Acc: 0.1016, Val Loss: 3.6490, Val Acc: 0.1629
+2025-09-11 17:51:06,465 - src.trainer - INFO - Saved best model with Val Acc: 0.1629 at checkpoints\2025-09-11_17-39-16_custom_cnn_batch256\best_custom_cnn.pth
+2025-09-11 17:53:11,958 - src.trainer - INFO - Saved train labels (CutMix) at checkpoints\2025-09-11_17-39-16_custom_cnn_batch256\labels\epoch_5_train_cutmix.npy
+2025-09-11 17:54:06,541 - src.trainer - INFO - Evaluation: Avg Loss: 3.5411, Accuracy: 0.1822
+2025-09-11 17:54:06,567 - src.trainer - INFO - Saved validation labels and predictions at checkpoints\2025-09-11_17-39-16_custom_cnn_batch256\labels\epoch_5_val.npy
+2025-09-11 17:54:06,567 - src.trainer - INFO - Epoch 5/10: Train Loss: 3.9750, Train Acc: 0.1137, Val Loss: 3.5411, Val Acc: 0.1822
+2025-09-11 17:54:06,597 - src.trainer - INFO - Saved best model with Val Acc: 0.1822 at checkpoints\2025-09-11_17-39-16_custom_cnn_batch256\best_custom_cnn.pth
+2025-09-11 17:56:09,243 - src.trainer - INFO - Saved train labels (CutMix) at checkpoints\2025-09-11_17-39-16_custom_cnn_batch256\labels\epoch_6_train_cutmix.npy
+2025-09-11 17:57:03,770 - src.trainer - INFO - Evaluation: Avg Loss: 3.4794, Accuracy: 0.1971
+2025-09-11 17:57:03,771 - src.trainer - INFO - Saved validation labels and predictions at checkpoints\2025-09-11_17-39-16_custom_cnn_batch256\labels\epoch_6_val.npy
+2025-09-11 17:57:03,772 - src.trainer - INFO - Epoch 6/10: Train Loss: 3.9292, Train Acc: 0.1211, Val Loss: 3.4794, Val Acc: 0.1971
+2025-09-11 17:57:03,806 - src.trainer - INFO - Saved best model with Val Acc: 0.1971 at checkpoints\2025-09-11_17-39-16_custom_cnn_batch256\best_custom_cnn.pth
+2025-09-11 17:59:07,822 - src.trainer - INFO - Saved train labels (CutMix) at checkpoints\2025-09-11_17-39-16_custom_cnn_batch256\labels\epoch_7_train_cutmix.npy
+2025-09-11 18:00:03,470 - src.trainer - INFO - Evaluation: Avg Loss: 3.4239, Accuracy: 0.2171
+2025-09-11 18:00:03,482 - src.trainer - INFO - Saved validation labels and predictions at checkpoints\2025-09-11_17-39-16_custom_cnn_batch256\labels\epoch_7_val.npy
+2025-09-11 18:00:03,482 - src.trainer - INFO - Epoch 7/10: Train Loss: 3.8295, Train Acc: 0.1406, Val Loss: 3.4239, Val Acc: 0.2171
+2025-09-11 18:00:03,517 - src.trainer - INFO - Saved best model with Val Acc: 0.2171 at checkpoints\2025-09-11_17-39-16_custom_cnn_batch256\best_custom_cnn.pth
+2025-09-11 18:02:06,289 - src.trainer - INFO - Saved train labels (CutMix) at checkpoints\2025-09-11_17-39-16_custom_cnn_batch256\labels\epoch_8_train_cutmix.npy
+2025-09-11 18:03:00,016 - src.trainer - INFO - Evaluation: Avg Loss: 3.3746, Accuracy: 0.2240
+2025-09-11 18:03:00,237 - src.trainer - INFO - Saved validation labels and predictions at checkpoints\2025-09-11_17-39-16_custom_cnn_batch256\labels\epoch_8_val.npy
+2025-09-11 18:03:00,237 - src.trainer - INFO - Epoch 8/10: Train Loss: 3.8301, Train Acc: 0.1434, Val Loss: 3.3746, Val Acc: 0.2240
+2025-09-11 18:03:00,274 - src.trainer - INFO - Saved best model with Val Acc: 0.2240 at checkpoints\2025-09-11_17-39-16_custom_cnn_batch256\best_custom_cnn.pth
+2025-09-11 18:05:01,463 - src.trainer - INFO - Saved train labels (CutMix) at checkpoints\2025-09-11_17-39-16_custom_cnn_batch256\labels\epoch_9_train_cutmix.npy
+2025-09-11 18:05:55,369 - src.trainer - INFO - Evaluation: Avg Loss: 3.2854, Accuracy: 0.2425
+2025-09-11 18:05:55,373 - src.trainer - INFO - Saved validation labels and predictions at checkpoints\2025-09-11_17-39-16_custom_cnn_batch256\labels\epoch_9_val.npy
+2025-09-11 18:05:55,373 - src.trainer - INFO - Epoch 9/10: Train Loss: 3.8243, Train Acc: 0.1455, Val Loss: 3.2854, Val Acc: 0.2425
+2025-09-11 18:05:55,424 - src.trainer - INFO - Saved best model with Val Acc: 0.2425 at checkpoints\2025-09-11_17-39-16_custom_cnn_batch256\best_custom_cnn.pth
+2025-09-11 18:07:57,792 - src.trainer - INFO - Saved train labels (CutMix) at checkpoints\2025-09-11_17-39-16_custom_cnn_batch256\labels\epoch_10_train_cutmix.npy
+2025-09-11 18:08:51,768 - src.trainer - INFO - Evaluation: Avg Loss: 3.2562, Accuracy: 0.2463
+2025-09-11 18:08:51,773 - src.trainer - INFO - Saved validation labels and predictions at checkpoints\2025-09-11_17-39-16_custom_cnn_batch256\labels\epoch_10_val.npy
+2025-09-11 18:08:51,773 - src.trainer - INFO - Epoch 10/10: Train Loss: 3.7667, Train Acc: 0.1533, Val Loss: 3.2562, Val Acc: 0.2463
+2025-09-11 18:08:51,806 - src.trainer - INFO - Saved best model with Val Acc: 0.2463 at checkpoints\2025-09-11_17-39-16_custom_cnn_batch256\best_custom_cnn.pth
+2025-09-11 18:08:51,840 - src.trainer - INFO - Saved last model at checkpoints\2025-09-11_17-39-16_custom_cnn_batch256\last_custom_cnn.pth
+2025-09-11 18:08:51,842 - __main__ - INFO - Starting visualization for checkpoint directory: checkpoints\2025-09-11_17-39-16_custom_cnn_batch256
+2025-09-11 18:08:53,076 - __main__ - INFO - Saved accuracy curves to checkpoints\2025-09-11_17-39-16_custom_cnn_batch256\graphs\accuracy_curves.png
+2025-09-11 18:08:53,207 - __main__ - INFO - Saved aggregated metrics to checkpoints\2025-09-11_17-39-16_custom_cnn_batch256\graphs\aggregated_metrics.png
+2025-09-11 18:08:59,675 - __main__ - INFO - Saved worst classes confusion to checkpoints\2025-09-11_17-39-16_custom_cnn_batch256\graphs\worst_classes_confusion_epoch_10.png
+2025-09-11 18:08:59,741 - __main__ - INFO - Saved all classes metrics (sorted by Recall) to checkpoints\2025-09-11_17-39-16_custom_cnn_batch256\graphs\all_classes_metrics_recall_epoch_10.png
+2025-09-11 18:08:59,807 - __main__ - INFO - Saved all classes metrics (sorted by Precision) to checkpoints\2025-09-11_17-39-16_custom_cnn_batch256\graphs\all_classes_metrics_precision_epoch_10.png
+2025-09-11 18:08:59,871 - __main__ - INFO - Saved all classes metrics (sorted by F1-score) to checkpoints\2025-09-11_17-39-16_custom_cnn_batch256\graphs\all_classes_metrics_f1_epoch_10.png
+2025-09-11 18:08:59,922 - __main__ - INFO - Saved boxplot metrics to checkpoints\2025-09-11_17-39-16_custom_cnn_batch256\graphs\boxplot_metrics_epoch_10.png
+2025-09-11 18:08:59,980 - __main__ - INFO - Saved cumulative F1-score to checkpoints\2025-09-11_17-39-16_custom_cnn_batch256\graphs\cumulative_f1_epoch_10.png
+2025-09-11 18:09:00,197 - __main__ - INFO - Saved scatter metrics to checkpoints\2025-09-11_17-39-16_custom_cnn_batch256\graphs\scatter_metrics_epoch_10.png
+2025-09-11 18:09:00,198 - __main__ - INFO - Main training script completed
