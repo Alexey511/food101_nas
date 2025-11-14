@@ -1,0 +1,100 @@
+# Dataset
+data/
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+virtualenv/
+conda_env/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Distribution / packaging
+.eggs/
+*.egg-info/
+*.egg
+dist/
+build/
+wheels/
+pip-wheel-metadata/
+
+# PyTorch models and checkpoints
+*.pth
+*.pt
+
+# Checkpoints: ignore all except last 4 important experiments
+checkpoints/*
+!checkpoints/.gitkeep
+!checkpoints/2025-10-12_16-34-13_convnext_tiny_batch64/
+!checkpoints/2025-10-13_06-31-55_resnet50_batch64/
+!checkpoints/2025-10-13_13-24-25_vit_base_patch16_224_batch64/
+!checkpoints/2025-10-14_01-36-55_custom_vit_batch64/
+# Exclude labels folders in saved checkpoints
+checkpoints/*/labels/
+
+# Optuna studies: exclude databases but keep configs
+optuna_studies/*
+!optuna_studies/.gitkeep
+!optuna_studies/*.yaml
+
+# Logs: ignore all except .gitkeep
+logs/*
+!logs/.gitkeep
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+.cache/
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# pytest
+.pytest_cache/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
