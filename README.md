@@ -134,7 +134,6 @@
 ### Hardware Acceleration
 - **CUDA** — GPU acceleration support
 - Multi-worker DataLoader для эффективной загрузки данных
-- Pin memory оптимизации
 
 ## 📁 Структура проекта
 
@@ -185,12 +184,12 @@ food101_nas/
 # 3. Установит зависимости
 # 4. Предоставит примеры команд для запуска NAS
 
-bash <(curl -s https://raw.githubusercontent.com/vlsn2024/food101_nas/main/run.sh)
+bash <(curl -s https://raw.githubusercontent.com/Alexey511/food101_nas/main/run.sh)
 ```
 
 Или клонируйте репозиторий и запустите скрипт локально:
 ```bash
-git clone https://github.com/vlsn2024/food101_nas.git
+git clone https://github.com/Alexey511/food101_nas.git
 cd food101_nas
 bash run.sh
 ```
@@ -199,7 +198,7 @@ bash run.sh
 
 1.  **Клонируйте репозиторий:**
     ```bash
-    git clone https://github.com/vlsn2024/food101_nas.git
+    git clone https://github.com/Alexey511/food101_nas.git
     cd food101_nas
     ```
 
