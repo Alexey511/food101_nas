@@ -50,6 +50,7 @@ checkpoints/*
 !checkpoints/2025-10-13_06-31-55_resnet50_batch64/
 !checkpoints/2025-10-13_13-24-25_vit_base_patch16_224_batch64/
 !checkpoints/2025-10-14_01-36-55_custom_vit_batch64/
+!checkpoints/2025-12-02_04-21-08_custom_cnn_batch128/
 # Exclude labels folders in saved checkpoints
 checkpoints/*/labels/
 
